@@ -1,5 +1,9 @@
 <?php
 
+require_once '../vendor/autoload.php';
+require_once '../src/slimConfig.php';
+
+
 
 use function \src\slimConfig;
 
@@ -15,7 +19,6 @@ $app = new \Slim\App(slimConfig());
 $app->get('/searchWeather', LocalesWeather::class . ':getWeatherByLocale');
 
 $app->get('/locale', LocalesWeather::class . ':getAllLocale');
-$app->get('/localeByName', LocalesWeather::class . ':getLocaleByName');
 $app->get('/localeByState', LocalesWeather::class . ':getLocaleByState');
 
 $app->get('/weathers', LocalesWeather::class . ':getAllWeathers');

@@ -17,7 +17,7 @@ final class WeatherJSON{
 
   public function __construct(){
 
-    $this->urlBaseWeather = file_get_contents('App/Base/weather.json');
+    $this->urlBaseWeather = file_get_contents(__DIR__.'/../Base/weather.json');
     $this->arrayWeathers = json_decode($this->urlBaseWeather); 
 
   }

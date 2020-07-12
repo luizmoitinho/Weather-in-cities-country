@@ -19,7 +19,7 @@ final class LocalesJSON{
 
   public function __construct(){
     
-      $this->urlBaseLocale = file_get_contents('App/Base/locales.json');
+      $this->urlBaseLocale = file_get_contents(__DIR__.'/../Base/locales.json');
       $this->arrayLocales = json_decode($this->urlBaseLocale); 
 
   }
