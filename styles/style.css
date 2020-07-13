@@ -1,3 +1,5 @@
+/*=============== GENERICOS =============*/
+
 *{
   margin: 0;
   padding: 0;
@@ -20,8 +22,11 @@ html, body{
 
 input[type=text]{
   height: 50px;
+  outline: none;
+  border: none;
 }
 
+/*=============== CLASSES DE APOIO =============*/
 .center-horizontal{
   display: flex;
   flex-direction: column;
@@ -42,10 +47,12 @@ input[type=text]{
   background-color: #6563bd;
 }
 
-
 .header{
   height: 70px;
 }
+
+
+/*=============== IMAGENS =============*/
 
 .logo-clima-tempo{
   background-size: cover;
@@ -53,6 +60,22 @@ input[type=text]{
   height: 40px;
   align-self:center;
 }
+
+.btn-search>button{
+  background-image: url('../images/icons/search.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+}
+
+.btn-search>button:hover{
+  box-shadow: 0px 3px 4px #ccc;
+  background-color: #f3f3f3;
+}
+
+
+/*=============== FORM =============*/
 
 .form-weather{
   display: flex;
@@ -62,13 +85,27 @@ input[type=text]{
 
 }
 
+/*=============== INFORMAÇAO DO TEMPO =============*/
+
 .info-weather{
   background-color: rgb(212, 212, 212);
-  padding: 100px;
   border-radius: 5px;
   box-shadow: 0px  5px 10px #ccc;
+  box-sizing: border-box;
 }
 
-.info-weather>span{
+.info-weather>#info-head-weather{
   background-color: rgb(255, 255, 255);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.info-weather>#info-body-weather{
+  padding: 8px;
+}
+
+/*=============== ICONES =============*/
+
+.icon{
+  object-fit: cover;
 }
