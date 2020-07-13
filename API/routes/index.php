@@ -15,6 +15,6 @@ use App\Controller\LocalesWeather;
 
 $app = new \Slim\App(slimConfig());
 
-$app->get('/searchWeather', LocalesWeather::class . ':getWeatherByLocale');
+$app->post('/searchWeather', LocalesWeather::class . ':getWeatherByLocale');
 
 $app->run();

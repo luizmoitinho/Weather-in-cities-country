@@ -27,7 +27,7 @@ final class LocalesWeather{
 
   public function getWeatherByLocale(Request $request, Response $response, array $args):Response{
     
-    $data = $request->getQueryParams();
+    $data = $request->getParsedBody();
 
     if (is_array($data) && array_key_exists('name',$data)){
 

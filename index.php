@@ -97,7 +97,7 @@ date_default_timezone_set('America/Bahia');
       const urlAPI = "http://localhost/Pessoal/challenge-accepted/API/routes/index.php/searchWeather";
       
       $.ajax({
-        type: 'GET',
+        type: 'POST',
         url : urlAPI,
         data: {"name":citie},
         dataType:"json",
