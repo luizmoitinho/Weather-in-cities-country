@@ -15,13 +15,6 @@ use App\Controller\LocalesWeather;
 
 $app = new \Slim\App(slimConfig());
 
-
 $app->get('/searchWeather', LocalesWeather::class . ':getWeatherByLocale');
-
-$app->get('/locale', LocalesWeather::class . ':getAllLocale');
-$app->get('/localeByState', LocalesWeather::class . ':getLocaleByState');
-
-$app->get('/weathers', LocalesWeather::class . ':getAllWeathers');
-$app->get('/weatherById', LocalesWeather::class . ':getWeatherById');
 
 $app->run();

@@ -26,9 +26,8 @@ final class LocalesWeather{
   //================ WEATHERS/LCAOLES ===========================
 
   public function getWeatherByLocale(Request $request, Response $response, array $args):Response{
+    $data = $request->getParsedBody();
     
-    $data = $request->getQueryParams();
-
     if (is_array($data) && array_key_exists('name',$data)){
 
         if(empty($data['name']))
@@ -51,7 +50,7 @@ final class LocalesWeather{
 
   //================ LOCALES ===========================
 
-  public function getAllLocale(Request $request, Response $response, array $data): Response{
+  public function getAllLocale(Request $request, Response $response, array $args): Response{
     
     $locale =  $this->localeJSON->getAllLocale();
   
