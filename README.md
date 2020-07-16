@@ -6,38 +6,14 @@
 
 ___
 
+### Getting Started
+1. Baixe o repositório e o coloque em um servidor local (na pasta htdocs)
+2. Inicializar o servidor apache (lampp ou xampp)
+3. Abra o browser e digite localhost/caminho_para_o_projeto/weather-in-cities-country
 
-## Processo de recrutamento
-
-Olá desenvolvedor, pronto para participar do nosso
-processo de recrutamento para vaga de Full-stack (CLT)?
-
-### Sobre a Vaga
-
-- Empresa: Climatempo
-- Cargo: Desenvolvedor Full-stack (CLT);
-- VR e VT;
-- Home Office após período de experiência;
-- Flexibilidade no horário de trabalho para acompanhar eventos de tecnologia;
-- Local: Parque Tecnológico - São José dos Campos (http://www.pqtec.org.br/).
-
-
-### Requisitos
-
-Requisitos para a vaga, bons conhecimentos em:
-
-- HTML
-- CSS
-- Javascript
-- NodeJS
-- PHP
-- SQL
-- NoSQL
-- RESTful
-
-IMPORTANTE:
-
-- Residir no vale do paraíba ou nas proximidades.
+## Cidades que permitem ser buscadas:
+Como no arquivo possuem poucas cidades: *Osasco* e *São Paulo*, somente
+é possível buscar somente o clima destas cidades.
 
 
 ### O Desafio
