@@ -3,8 +3,11 @@ $("#btnSearch").on("click", function () {
   if (citie == "")
     $("#msgError").html("* O nome da cidade deve ser informado.");
   else {
-    let message;
+
     $("#msgError").html("");
+    $('#info-weather').html('');
+    $('#title-weathe').html('');
+
     const urlAPI =
       "http://localhost/Pessoal/challenge-accepted/API/routes/index.php/searchWeather";
 
@@ -16,6 +19,7 @@ $("#btnSearch").on("click", function () {
       success: function (response) {
         if (response.hasOwnProperty("message"))
           $("#msgError").html("* " + response.message);
+         
         else {
           //Titulo da previsao da cidade
           $("#title-weather").html(
@@ -27,6 +31,8 @@ $("#btnSearch").on("click", function () {
 
           let allWeathers = "";
           for (let weather of response.weather) {
+            dateSplite =  weather.date.split('-')
+            weather.date = dateSplite[2]+'/'+dateSplite[1]+'/'+dateSplite[0]
             allWeathers += createWeatherHTML(weather)+'<br>';
           }
           $("#info-weather").html(allWeathers);
@@ -39,10 +45,10 @@ $("#btnSearch").on("click", function () {
 function createWeatherHTML(weather) {
   return (
     '<div class="row d-flex justify-content-center" > '+
-    '<div class="col-md-8 col-sm-12 col-lg-8 info-weather d-flex justify-content-center flex-column p-0 mt-5">' +
+    '<div class="col-md-8 col-sm-12 col-lg-8 info-weather d-flex justify-content-center flex-column p-0 mt-3">' +
     '<div id="info-head-weather">' +
     '<div class="border-bottom">' +
-    weather.date +
+    weather.date.split('-') +
     "</div>" +
     '<small class="mt-2">' +
     weather.text +

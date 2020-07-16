@@ -21,8 +21,11 @@ date_default_timezone_set('America/Bahia');
       </div>
 
       <div class="container center-horizontal">
-          <div class="row justify-content-center">
-            <div id="msgError" class="text-danger col-md-6 mb-2"></div>
+
+          <div class="row">
+            <div class= "form-weather p-0 col-md-12">
+               <div id="msgError" class="text-danger col-lg-6 col-md-8 col-12 p-0 m-0 mb-2"></div>
+               </div>
           </div>
           <div class="row">
             <div class="form-weather p-0 col-md-12">
@@ -36,7 +39,7 @@ date_default_timezone_set('America/Bahia');
           </div>
 
           <div class="row justify-content-center mt-4">
-            <h3 class="col-md-8 " id="title-weather"></h3>
+            <h3 class="col-md-8 p-0" id="title-weather"></h3>
           </div> 
           <div id="info-weather">
           
