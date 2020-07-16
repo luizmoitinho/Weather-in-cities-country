@@ -45,7 +45,7 @@ $("#btnSearch").on("click", function () {
 function createWeatherHTML(weather) {
   return (
     '<div class="row d-flex justify-content-center" > '+
-    '<div class="col-md-8 col-sm-12 col-lg-8 info-weather d-flex justify-content-center flex-column p-0 mt-3">' +
+    '<div class="col-md-8 col-sm-12 col-lg-6 info-weather d-flex justify-content-center flex-column p-0 mt-3">' +
     '<div id="info-head-weather">' +
     '<div class="border-bottom">' +
     weather.date.split('-') +
@@ -56,8 +56,8 @@ function createWeatherHTML(weather) {
     "</div>" +
     '<div id="info-body-weather">' +
     '<div class="row">' +
-    '<div class="col-md-6 col-6 col-lg-8 d-flex">' +
-    '<div  class="icon mr-4">' +
+    '<div class="col-md-6 col-6 col-lg-6 d-flex">' +
+    '<div  class="icon ">' +
     '<img src="./assets/images/icons/upload.png">' +
     "</div>" +
     '<span class="text-info">' +

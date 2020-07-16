@@ -39,7 +39,7 @@ date_default_timezone_set('America/Bahia');
           </div>
 
           <div class="row justify-content-center mt-4">
-            <h3 class="col-md-8 p-0" id="title-weather"></h3>
+            <h3 class="col-md-6 p-0" id="title-weather"></h3>
           </div> 
           <div id="info-weather">
           
