@@ -13,7 +13,7 @@ ___
 
 ### Cidades que permitem ser buscadas:
 Como no arquivo possuem poucas cidades: *Osasco* e *São Paulo*, somente
-é possível buscar somente o clima destas cidades.
+é possível buscar o clima destas cidades.
 
 
 ### O Desafio
