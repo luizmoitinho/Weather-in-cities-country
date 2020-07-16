@@ -21,9 +21,10 @@ date_default_timezone_set('America/Bahia');
       </div>
 
       <div class="container center-horizontal">
-
-          <div class="row">
+          <div class="row justify-content-center">
             <div id="msgError" class="text-danger col-md-6 mb-2"></div>
+          </div>
+          <div class="row">
             <div class="form-weather p-0 col-md-12">
               <div class="input-group col-lg-6 col-md-8 col-12 p-0 m-0 shadow-sm">
                 <input type="text" class="form-control border-right" id="nameCitie" name="nameCitie" placeholder="Digite o nome da cidade">
@@ -34,45 +35,13 @@ date_default_timezone_set('America/Bahia');
             </div>
           </div>
 
-          <div class="row mt-4 d-flex justify-content-center"> 
-            <div class="col-md-6 info-weather d-flex justify-content-center flex-column p-0">
-                  <div id="info-head-weather">
-                    <div class="border-bottom">11/12/2020</div>
-                    <small class="mt-2">Previsao</small>
-                  </div>
-                  <div id="info-body-weather">
-                      <div class="row">
-                          <div class="col-md-6 d-flex"> 
-                              <div  class="icon mr-5"> 
-                                <img src="./assets/images/icons/upload.png">
-                              </div>
-                              <span class="text-info">asd</span>
-                          </div>
-                          <div class="col-md-6 d-flex"> 
-                            <div  class="icon mr-5"> 
-                              <img src="./assets/images/icons/download.png">
-                            </div>
-                            <span class="text-danger">asd</span>
-                          </div>
-                      </div>
-                      <div class="row mt-5">
-                          <div class="col-md-6 d-flex"> 
-                            <div  class="icon mr-5"> 
-                                <img src="./assets/images/icons/raindrop-close-up.png">
-                            </div>
-                              <span class="">asd</span>
-                          </div>
-                          <div class="col-md-6 d-flex"> 
-                            <div  class="icon mr-5"> 
-                              <img src="./assets/images/icons/protection-symbol-of-opened-umbrella-silhouette-under-raindrops.png">
-                            </div>
-                            <span class="">asd</span>
-                          </div>
-                      </div>
-                  </div>
-            </div>
+          <div class="row justify-content-center mt-4">
+            <h3 class="col-md-8 " id="title-weather"></h3>
+          </div> 
+          <div id="info-weather">
+          
           </div>
-
+          
           <div class="row mt-4 d-flex justify-content-center">
             <p class="mt-3 mb-3 text-muted">© 2020</p>
           </div>
