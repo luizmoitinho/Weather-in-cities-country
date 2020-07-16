@@ -11,7 +11,7 @@ ___
 2. Inicializar o servidor apache (lampp ou xampp)
 3. Abra o browser e digite localhost/caminho_para_o_projeto/weather-in-cities-country
 
-## Cidades que permitem ser buscadas:
+### Cidades que permitem ser buscadas:
 Como no arquivo possuem poucas cidades: *Osasco* e *São Paulo*, somente
 é possível buscar somente o clima destas cidades.
 
